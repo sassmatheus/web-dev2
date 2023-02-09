@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <title>Formulário/Tabela</title>
+    <style>
+        ul{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: lightsteelblue;
+            list-style: none;
+        }
+        li{
+            padding: 15px 10px 15px 10px;
+        }
+        li:hover{
+            text-decoration: underline;
+            background-color: lightslategray;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Sofia Sans Extra Condensed', sans-serif;
+            font-size: 50px;
+        }
+        .principal{
+            display: flex;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        form{
+            width: 30vw;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 30px;
+        }
+        input, select, button{
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            height: 40px;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 3px;
+            border: 0;
+        }
+        
+        select{
+            background-color: white;
+        }
+        input, select{
+            padding-left: 15px;
+        }
+        #enviar{
+            margin: 15px 0 15px 0;
+            background-color: rgb(76, 175, 80);
+            color: white;
+        }
+        #limpar{
+            background-color: rgb(255, 193, 7);
+            color: white;
+        }
+        #enviar:hover,#limpar:hover{
+            border: 1px solid darkslategrey;
+            cursor: pointer;
+        }
+        
+        .tabela{
+            font-family: 'Roboto', sans-serif;
+            margin-left: 30px;
+            
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        td{
+            padding: 10px;
+        }
+        .primeiraLinhaTab{
+            background-color: rgb(4, 170, 109);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="post-img.html"><li>Postagem c/ imagem</li></a>
+                <a href="#"><li>Formulário/Tabela</li></a>
+                <a href="busca.html"><li>Busca</li></a>
+                <a href="/index.html"><li>Início</li></a>
+            </ul>
+        </nav>
+        <h1>Formulário de cadastro e Tabela com dados</h1>
+        <div class="principal">
+            <form action="">
+                <label for="nome">Nome completo</label> <br>
+                <input type="text" name="nome" id="nome" value> <br>
+                <label for="tel">Telefone</label> <br>
+                <input type="text" name="tel" id="tel" placeholder="(99)99999-9999"> <br>
+                <label for="email">E-mail</label> <br>
+                <input type="text" name="email" id="email" placeholder="seu@email.aqui"> <br>
+                <label for="uf">Estado de residência</label> <br>
+                <select name="uf" id="uf">
+                    <option selected disabled>[Selecione]</option>
+                    <option value="ES">ES</option>
+                    <option value="MG">MG</option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                </select> <br>
+                <button type="submit" id="enviar">Enviar</button> <br>
+                <button type="reset" id="limpar">Limpar</button>
+            </form>
+            <div class="tabela">
+                <table>
+                    <tr class="primeiraLinhaTab">
+                        <td>Nome</td>
+                        <td>Telefone</td>
+                        <td>Email</td>
+                        <td>Estado</td>
+                    </tr>
+                    <tr>
+                        <td>José da Silva</td>
+                        <td>(11) 99785-4871</td>
+                        <td>josesilva11@gmail.com</td>
+                        <td>Santa Catarina</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos William Freitas</td>
+                        <td>(11) 99784-4812</td>
+                        <td>mwfreitas@microsoft.com</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Luiza dos Reis Barco</td>
+                        <td>(14) 81475-4812</td>
+                        <td>anareis@microsoft.com</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>Keila Santanna de Souza</td>
+                        <td>(17) 997441155</td>
+                        <td>keilasantanna@outlook.com</td>
+                        <td>São Paulo</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </header>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Busca</title>
+    <style>
+        ul{
+            display: flex;
+            background-color: lightsteelblue;
+            list-style: none;
+            flex-direction: row-reverse;
+        }
+        li{
+            padding: 15px 10px 15px 10px;
+        }
+        li:hover{
+            text-decoration: underline;
+            background-color: lightslategray;
+        }
+        .principal{
+            margin-top: -16px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2vw;
+            color: orange;
+            
+            background-image: url("/imgs/360_F_440137850_sBJOKpItVGgxB2XgCY4pxJECaU3QTEXC.jpg");
+            height: 40vh;
+            background-size: 100% 100%;
+            margin-bottom: 70px;
+        }
+        ul > a{
+            text-decoration: none;
+            color: black;
+        }
+        input{
+            font-size: 24px;
+        }
+        input:not(.botaoBusca){
+            width: 30vw;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="post-img.html"><li>Postagem c/ imagem</li></a>
+                <a href="form-tab.html"><li>Formulário/Tabela</li></a>
+                <a href="#"><li>Busca</li></a>
+                <a href="/index.html"><li>Início</li></a>
+            </ul>
+        </nav>
+        
+        <div class="principal">
+            <h1>Busca de conteúdo</h1>
+            <form action="">
+                <input class="campoBusca" type="text" placeholder="Digite para buscar">
+                <input class="botaoBusca" type="button" value="Pesquisar">
+            </form>
+        </div>
+        <p><a href="">Sobre a empresa</a></p>
+        <p><a href="">Contato</a></p>
+
+    </header>
+</body>
+</html>
