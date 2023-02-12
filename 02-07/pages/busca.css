@@ -1,0 +1,38 @@
+ul{
+    display: flex;
+    background-color: lightsteelblue;
+    list-style: none;
+    flex-direction: row-reverse;
+}
+li{
+    padding: 15px 10px 15px 10px;
+}
+li:hover{
+    text-decoration: underline;
+    background-color: lightslategray;
+}
+.principal{
+    margin-top: -16px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    color: orange;
+    
+    background-image: url("/imgs/360_F_440137850_sBJOKpItVGgxB2XgCY4pxJECaU3QTEXC.jpg");
+    height: 40vh;
+    background-size: 100% 100%;
+    margin-bottom: 70px;
+}
+ul > a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    font-size: 24px;
+}
+input:not(.botaoBusca){
+    width: 30vw;
+}

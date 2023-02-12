@@ -1,0 +1,40 @@
+ul{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: lightsteelblue;
+    list-style: none;
+}
+li{
+    padding: 15px 10px 15px 10px;
+}
+li:hover{
+    text-decoration: underline;
+    background-color: lightslategray;
+}
+h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-size: 40px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+p{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+}
+img{
+    width: 452px;
+    height: 380px;
+    margin: 0 25px 0 15px;
+}
+.principal{
+    display: flex;
+    width: 95%;
+}
+ul > a{
+    text-decoration: none;
+    color: black;
+}
