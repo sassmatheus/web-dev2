@@ -1,0 +1,80 @@
+body{
+    margin: 0 6vw 0 6vw;
+}
+
+h1{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 50px;
+}
+
+.principal{
+    display: flex;
+}
+
+.image{
+    justify-content: center;
+}
+
+form{
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub{
+    display: flex;
+}
+
+.sub > * {
+    width: 100%;
+    margin-right: 30px; 
+}
+
+input, select{
+    width: 100%;
+}
+
+input, select, button{
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+}
+
+select{
+    background-color: white;
+}
+
+input, select{
+    padding-left: 15px;
+}
+
+.input-file{
+    font-size: 18px;
+    padding: 0;   
+    padding-top: 5px; 
+}
+
+#enviar:hover,#limpar:hover{
+    border: 1px solid darkslategrey;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.botao-cadastrar {
+    background-color: #007bff;
+    color: white;
+}
+  
+.botao-limpar {
+    background-color: #ffc107;
+    color: black;
+}

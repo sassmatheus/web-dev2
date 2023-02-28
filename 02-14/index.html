@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <title>Formulário/Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <div class="principal">
+        <form action="">
+            <div class="sub">
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(DD)XXXXX-XXXX" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <label for="cpf">CPF:</label> <br>
+                    <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required>
+                </div>
+                <div>
+                    <label for="data-nasc">Data de Nascimento:</label> <br>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="XX.XXX-XXX" required>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <label for="endereco">Endereço:</label> <br>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, nº e bairro" required>
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label> <br>
+                    <select name="cidade" id="cidade" required>
+                        <option value="" disabled selected>[Selecione]</option>
+                        <option value="vtp">Votuporanga</option>
+                        <option value="cos">Cosmorama</option>
+                        <option value="tnb">Tanabi</option>
+                        <option value="bal">Bálsamo</option>
+                        <option value="mirs">Mirassol</option>
+                        <option value="sjp">São José do Rio Preto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sub">
+                <div>
+                    <label for="foto-perfil">Foto de Perfil:</label>
+                    <input class="input-file" type="file" id="foto-perfil" name="foto-perfil" accept="image/*" required>
+                </div>
+                <div>
+                    <label for="contrato">Contrato assinado em PDF:</label>
+                    <input class="input-file" type="file" id="contrato" name="contrato" accept="application/pdf" required>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="botao-cadastrar">Cadastrar</button>
+                <button type="reset" class="botao-limpar">Limpar</button>
+            </div>
+        </form>
+        <div class="imagem">
+            <img src="https://cdn-icons-png.flaticon.com/512/6094/6094945.png" alt="icone de um caderno roxo" width="300px">
+        </div>
+    </div>
+    <a href="../index.html">Voltar ao menu de aulas</a>
+</body>
+</html>
