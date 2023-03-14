@@ -10,10 +10,7 @@
         body {
             padding-left: 5%;
             padding-top: 2%;
-        }
-
-        h1 {
-            text-align: center;
+            font-family: 'Roboto', sans-serif;
         }
         .cores{
             display: flex;
@@ -21,59 +18,62 @@
         .azul{
             width: 100px;
             height: 100px;
-            background-color: blue;
-            border: 2px solid black;
+            background-color: lightblue;
+            border: 1px solid black;
             margin-right: 30px;
         }
         .vermelho{
             width: 100px;
             height: 100px;
-            background-color: red;
-            border: 2px solid black;
+            background-color: coral;
+            border: 1px solid black;
             margin-right: 30px;
         }
         .verde{
             width: 100px;
             height: 100px;
-            background-color: green;
-            border: 2px solid black;
+            background-color: lightgreen;
+            border: 1px solid black;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Destino GET</h1>
-
+    <h1>Destino GET</h1>
+    <hr>
+    <div>
         <?php
-        /*print_r($_POST)*/ ##Mostra tudo que esta no destino
-
         $nome = filter_input(INPUT_GET, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
         $email = filter_input(INPUT_GET, "email", FILTER_SANITIZE_EMAIL);
         $cor = filter_input(INPUT_GET, "cor", FILTER_SANITIZE_SPECIAL_CHARS);
 
-        echo "<p> Nome informado é: $nome<br>Email: $email</p>";
+        $info = "<p> Nome informado é: $nome<br>Email: $email</p>";
+        
+        if($nome && $email){
+            echo $info;
+        }
         ?>
 
         <p>
+            
             <a href="destino.php?nome=Matheus&email=matheus%40email.com&cor=<?php echo $cor ?>">[nome = Matheus | email = matheus@email.com]</a> <br>
             <a href="destino.php?nome=Sass&email=sass%40email.com&cor=<?php echo $cor ?>">[nome = Sass | email = sass@email.com]</a> <br>
             <a href="destino.php">Limpar tudo</a>
         </p>
         <div class="cores">
-            <a href="destino.php?cor=blue<?php echo '&nome=' . $nome . '&email=' . $email ?>">
+            <a href="destino.php?cor=lightblue<?php echo '&nome=' . $nome . '&email=' . $email ?>">
                 <div class="azul"></div>
             </a>
-            <a href="destino.php?cor=red<?php echo '&nome=' . $nome . '&email=' . $email ?>">
+            <a href="destino.php?cor=coral<?php echo '&nome=' . $nome . '&email=' . $email ?>">
                 <div class="vermelho"></div>
             </a>
-            <a href="destino.php?cor=green<?php echo '&nome=' . $nome . '&email=' . $email ?>">
+            <a href="destino.php?cor=lightgreen<?php echo '&nome=' . $nome . '&email=' . $email ?>">
                 <div class="verde"></div>
             </a>
         </div>
         
         <p>
-            <a href="index.php">Voltar ao formulario</a>
+            <a href="index.php">Voltar ao formulário</a>
         </p>
 
         <style>

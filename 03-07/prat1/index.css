@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+.form-body > *{
+    display: flex;
+}
+input, select{
+    width: 40%;
+}
+input, select, button{
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    height: 40px;
+}
+input, select{
+    padding-left: 10px;
+}
+label{
+    margin-right: 20px;
+    width: 100px;
+    text-align: end;
+    box-sizing: border-box;
+}
+label, input, select, button{
+    margin-top: 10px;
+}
+.botoes{
+    width: 400px;
+    justify-content: center;
+}
+button{
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 20px 10px 0 0;
+}
+.botao-enviar {
+    background-color: #007bff;
+    color: white;
+}
+.botao-limpar {
+    background-color: #ffc107;
+    color: black;
+}
+.preto{
+    background-color: black;
+}

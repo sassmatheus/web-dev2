@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2</title>
+    <style>
+        body {
+            padding-left: 5%;
+            padding-top: 1%;
+            font-family: 'Roboto', sans-serif;
+        }
+        input, select, button{
+            border-radius: 3px;
+            border: 1px solid lightgrey;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        label{
+            margin: 0 10px 0 30px;
+        }
+        button{
+            border-radius: 5px;
+            padding: 0 15px;
+            margin: 20px 10px 0 0;
+        }
+        .calcular {
+            background-color: #198754 ;
+            color: white;
+            margin-left: 30px;
+        }
+        .limpar {
+            background-color: #ffc107;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando 2 - Calculadora de média</h1>
+    <hr>
+    <form action="media.php" method="post">
+        <div>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" name="nota1" id="nota1" required>
+        </div>
+        <div>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" name="nota2" id="nota2" required>
+        </div>
+        <div>
+            <label for="nota3">Nota 3:</label>
+            <input type="number" name="nota3" id="nota3" required>
+        </div>
+        
+        <button type="submit" class="calcular">Calcular média</button>
+        <button type="reset" class="limpar">Limpar</button>
+    </form>
+
+    <p><a href='..'>Voltar aos exercícios.</a></p>
+</body>
+</html>
