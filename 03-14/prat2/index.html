@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando 2</title>
+    <title>Contador</title>
     <style>
         body {
             padding-left: 5%;
             padding-top: 1%;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', arial;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 300px;
         }
         input, select, button{
             border-radius: 3px;
@@ -23,9 +29,9 @@
         button{
             border-radius: 5px;
             padding: 0 15px;
-            margin: 20px 10px 0 0;
+            margin: 20px 0 0 10px;
         }
-        .calcular {
+        .enviar {
             background-color: #198754 ;
             color: white;
             margin-left: 30px;
@@ -37,26 +43,28 @@
     </style>
 </head>
 <body>
-    <h1>Praticando 2 - Calculadora de média</h1>
+    <h1>Praticando 2 - Contador</h1>
     <hr>
-    <form action="media.php" method="post">
+    <form action="destino.php" method="POST">
         <div>
-            <label for="nota1">Nota 1:</label>
-            <input type="number" name="nota1" id="nota1" required>
+            <label for="inicio">Início:</label>
+            <input type="number" name="inicio" id="inicio">
         </div>
         <div>
-            <label for="nota2">Nota 2:</label>
-            <input type="number" name="nota2" id="nota2" required>
+            <label for="final">Final:</label>
+            <input type="number" name="final" id="final">
         </div>
         <div>
-            <label for="nota3">Nota 3:</label>
-            <input type="number" name="nota3" id="nota3" required>
+            <label for="incremento">Incremento:</label>
+            <input type="number" name="incremento" id="incremento">
         </div>
-        
-        <button type="submit" class="calcular">Calcular média</button>
-        <button type="reset" class="limpar">Limpar</button>
+        <div>
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" class="limpar">Limpar</button>
+        </div>
     </form>
+    
+    <p><a href="../index.html">Voltar ao menu de exercícios</a></p>
 
-    <p><a href='../index.html'>Voltar aos exercícios.</a></p>
 </body>
 </html>

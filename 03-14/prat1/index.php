@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praticando 2</title>
+    <title>Tabuada</title>
     <style>
         body {
             padding-left: 5%;
@@ -25,7 +25,7 @@
             padding: 0 15px;
             margin: 20px 10px 0 0;
         }
-        .calcular {
+        .enviar {
             background-color: #198754 ;
             color: white;
             margin-left: 30px;
@@ -37,26 +37,31 @@
     </style>
 </head>
 <body>
-    <h1>Praticando 2 - Calculadora de média</h1>
+    <h1>Praticando 1 - Tabuada</h1>
     <hr>
-    <form action="media.php" method="post">
+    <form method="GET">
+        <label for="tabuada">Número:</label>
+        <input type="number" name="tabuada" id="tabuada" required>
         <div>
-            <label for="nota1">Nota 1:</label>
-            <input type="number" name="nota1" id="nota1" required>
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" class="limpar">Limpar</button>
         </div>
-        <div>
-            <label for="nota2">Nota 2:</label>
-            <input type="number" name="nota2" id="nota2" required>
-        </div>
-        <div>
-            <label for="nota3">Nota 3:</label>
-            <input type="number" name="nota3" id="nota3" required>
-        </div>
-        
-        <button type="submit" class="calcular">Calcular média</button>
-        <button type="reset" class="limpar">Limpar</button>
     </form>
+    
+    <p><a href="../index.html">Voltar ao menu de exercícios</a></p>
 
-    <p><a href='../index.html'>Voltar aos exercícios.</a></p>
+    <?php 
+        if($_GET){
+            $num = filter_input(INPUT_GET, 'tabuada');
+            
+            echo "<hr><h1>Tabuada do $num</h1>";
+            for($i = 1; $i<=10; $i++){
+                $result = $num * $i;
+                echo "<p>$num x $i = $result</p>";
+            }
+            echo "<br><a href='./'>Apagar</a>";
+        }
+    ?>
+
 </body>
 </html>

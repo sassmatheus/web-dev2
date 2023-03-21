@@ -74,7 +74,7 @@
 		echo "<a href='?link=gato'><img src='imgs/cat-min.png' alt='foto de um gato'></a>";
 		echo "<a href='?link=elefante'><img src='imgs/elephant-min.png' alt='foto de um elefante'></a>";
 		echo "<a href='?link=polvo'><img src='imgs/octopus-min.png' alt='foto de um polvo'></a>";
-		echo "<p><a href='..'>Voltar aos exercícios.</a></p>";
+		echo "<p><a href='../index.html'>Voltar aos exercícios.</a></p>";
 	}
 		
 ?>

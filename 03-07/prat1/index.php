@@ -30,6 +30,6 @@
             </div>
         </div>
     </form>
-    <p><a href='..'>Voltar aos exercícios.</a></p>
+    <p><a href='../index.html'>Voltar aos exercícios.</a></p>
 </body>
 </html>
