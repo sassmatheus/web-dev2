@@ -22,7 +22,7 @@ if (!file_exists($arquivo)) {
     }
 }
 
-$caminho_arquivo = 'C:/xampp/htdocs/web-dev2/03-21/Praticando/arquivo';
+$caminho_arquivo = 'C:\xampp\htdocs\web-dev2\03-21\Praticando\arquivo';
 $nome_arquivo = 'contato' . uniqid() . '.txt';
 $conteudo_arquivo = "Contato via site:\n\nData: $data_envio\nNome: $nome\nEmail: $email\nMensagem: $msg";
 file_put_contents($caminho_arquivo . '/' . $nome_arquivo, $conteudo_arquivo);

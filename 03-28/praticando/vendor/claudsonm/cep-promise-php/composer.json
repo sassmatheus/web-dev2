@@ -1,0 +1,37 @@
+{
+    "name": "claudsonm/cep-promise-php",
+    "description": "Busca por CEP utilizando Promises nos serviços dos Correios, ViaCEP, CepAberto e outros.",
+    "keywords": ["promise", "cep", "correios", "viacep", "cepaberto", "cep aberto", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudson Martins",
+            "email": "claudson@outlook.com",
+            "homepage": "https://github.com/claudsonm"
+        }
+    ],
+    "require": {
+        "php": "^7.4 | ^8.0",
+        "guzzlehttp/guzzle": "~7.2",
+        "ext-simplexml": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2",
+        "phpunit/phpunit": "^9.0",
+        "friendsofphp/php-cs-fixer": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Claudsonm\\CepPromise\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Claudsonm\\CepPromise\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
