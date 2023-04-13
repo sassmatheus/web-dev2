@@ -1,0 +1,70 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1, hr{
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+form{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 3vw;
+    flex-direction: column;
+}
+.form-body > *{
+    display: flex;
+}
+textarea{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+}
+input, select:not(.opts){
+    width: 100%;
+}
+.opts{
+    width: 30%;
+}
+input, select, button{
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box;
+    height: 40px;
+}
+input, select{
+    padding-left: 10px;
+}
+label{
+    margin-right: 20px;
+    width: 50%;
+    text-align: end;
+}
+label, input, select, button, textarea{
+    margin-top: 10px;
+}
+.botoes{
+    width: 100%;
+    justify-content: center;
+}
+button{
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 20px 10px 0 0;
+}
+.botao-enviar {
+    background-color: #007bff;
+    color: white;
+}
+.botao-limpar {
+    background-color: #ffc107;
+    color: black;
+}
+.preto{
+    background-color: black;
+}
+div{
+    align-items: center;
+}
